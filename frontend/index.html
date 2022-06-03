@@ -18,8 +18,8 @@
     <div class="people-list" id="people-list">
         <div class="search">
             <input id="userName" placeholder="search" type="text"/>
-            <button onclick="registration()">Enter the chat</button>
-            <button onclick="fetchAll()">Refresh</button>
+            <button onclick="registration()">Ingrese al Chat</button>
+            <button onclick="fetchAll()">Ver Usuarios</button>
         </div>
         <ul class="list" id="usersList">
 
@@ -48,12 +48,12 @@
         </div> <!-- end chat-history -->
 
         <div class="chat-message clearfix">
-            <textarea id="message-to-send" name="message-to-send" placeholder="Type your message" rows="3"></textarea>
+            <textarea id="message-to-send" name="message-to-send" placeholder="Ingrese su Mensaje" rows="3"></textarea>
 
             <i class="fa fa-file-o"></i> &nbsp;&nbsp;&nbsp;
             <i class="fa fa-file-image-o"></i>
 
-            <button id="sendBtn">Send</button>
+            <button id="sendBtn">Enviar</button>
 
         </div> <!-- end chat-message -->
 
@@ -64,8 +64,8 @@
 <script id="message-template" type="text/x-handlebars-template">
     <li class="clearfix">
         <div class="message-data align-right">
-            <span class="message-data-time">{{time}}, Today</span> &nbsp; &nbsp;
-            <span class="message-data-name">You</span> <i class="fa fa-circle me"></i>
+            <span class="message-data-time">{{time}}, Hoy</span> &nbsp; &nbsp;
+            <span class="message-data-name">Tú</span> <i class="fa fa-circle me"></i>
         </div>
         <div class="message other-message float-right">
             {{messageOutput}}
@@ -77,7 +77,7 @@
     <li>
         <div class="message-data">
             <span class="message-data-name"><i class="fa fa-circle online"></i> {{userName}}</span>
-            <span class="message-data-time">{{time}}, Today</span>
+            <span class="message-data-time">{{time}}, Hoy</span>
         </div>
         <div class="message my-message">
             {{response}}
